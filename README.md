@@ -381,6 +381,7 @@ Validated model fairness by checking classification performance across different
 
 ## Deployment
 The deployment process is carried out using Tableau.
+Link: https://public.tableau.com/views/CapstoneProject_17549184048650/Story1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link   
 
 
 ## Main Data Analysis Libraries
@@ -390,8 +391,10 @@ In this project, I utilized several essential Python libraries for data analysis
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+Content and Code Assistance
+I utilized several AI-powered tools to assist with code generation, explanation, and overall project development. Specifically, I relied on ChatGPT, Grock AI, and the built-in Copilot feature to help write, debug, and optimize the code throughout this project. These tools were instrumental in breaking down complex elements, allowing me to understand and implement solutions more quickly and accurately. Additionally, I used resources available through the Learning Management System (LMS) for guidance and supplementary material. This combined support enabled me to efficiently complete the project while maintaining high-quality results.
+
+CI: I also found help in asking the CI's for help alot as they helped me to get back on track when I was having alot of issues.
 
 ### Content 
 
