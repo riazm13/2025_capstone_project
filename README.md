@@ -396,18 +396,6 @@ I utilized several AI-powered tools to assist with code generation, explanation,
 
 CI: I also found help in asking the CI's for help alot as they helped me to get back on track when I was having alot of issues.
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+I would like to express my deepest gratitude to Emma for her exceptional guidance and support in helping me navigate the complexities of machine learning. Her expertise and encouragement were instrumental in my learning journey. I also extend my sincere thanks to all the course instructors, whose dedication and knowledge made this experience truly enriching. Additionally, I am profoundly grateful to my parents for their unwavering patience and support throughout this challenging assignment, which made it possible for me to persevere and succeed.
