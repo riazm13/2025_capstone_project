@@ -502,11 +502,7 @@ Performance Optimization: Ensuring the dashboard remained responsive with large 
 Skills and Tools to Learn Next
 Based on my experience with this project, I plan to expand my skillset in the following areas:
 
-Advanced Dashboard Frameworks: Learning tools like Dash by Plotly or Streamlit to build more scalable and performant interactive dashboards.
-
-Cloud Deployment: Gaining experience with deploying data applications to cloud platforms (e.g., AWS, Azure, or Heroku) to make dashboards accessible online with better performance.
-
-Deepening Machine Learning Knowledge: Exploring advanced machine learning techniques such as ensemble methods beyond Random Forests, hyperparameter tuning, and model interpretability tools like SHAP or LIME.
+Advanced Dashboard Frameworks: Learning tools like Power BI, Tableau or Streamlit to build more scalable and performant interactive dashboards.
 
 Data Engineering Fundamentals: Understanding database optimization, ETL pipelines, and big data processing to handle larger, more complex datasets efficiently.
 
