@@ -364,20 +364,154 @@ Mitigation Actions
 Used aggregated data in visualisations to prevent singling out individuals.
 
 Validated model fairness by checking classification performance across different geographic and demographic segments where possible.
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
+## Dashboard Design
+Dashboard Pages and Components
+Home Page
+
+Overview summary with key metrics (total transactions, average transaction amount)
+
+Welcome text and project introduction
+
+Navigation buttons to other pages
+
+Transactions Analysis
+
+Interactive filters: date range picker, category dropdown, and checkboxes to select transaction types
+
+Line chart showing transaction volume over time
+
+Bar plot comparing average transaction amounts by category
+
+Data table with sortable columns displaying raw transaction data
+
+Customer Insights
+
+Demographic breakdown using pie charts and histograms (age groups, location)
+
+Heatmap to visualize customer activity by region
+
+Interactive map widget showing customer distribution
+
+Model Performance
+
+Confusion matrix visualization for classification models
+
+Scatter plots comparing predicted vs actual values for regression models
+
+Key model metrics displayed in cards (accuracy, RMSE, R²)
+
+Feature importance bar chart from Random Forest models
+
+Settings & Help
+
+Buttons for exporting reports (CSV, PDF)
+
+User guide text and links to documentation
+
+Contact information and feedback form
+
+Dashboard Evolution and Updates
+During development, the dashboard underwent several updates to better present insights:
+
+Initially, a simple bar chart was planned for transaction categories, but was replaced with a more interactive boxplot to better display the distribution and outliers.
+
+The customer insights page originally included static demographic charts but was enhanced with interactive filters and a geospatial map to improve exploration and understanding.
+
+The model performance page was expanded to include multiple metrics and visualizations after early testing showed that a single confusion matrix was insufficient to convey the model’s predictive accuracy.
+
+Communicating Data Insights to Different Audiences
+To effectively communicate complex data insights to both technical and non-technical audiences, the dashboard design incorporated the following strategies:
+
+For Non-Technical Users:
+
+Use of clear, intuitive visualizations such as pie charts and bar graphs with descriptive titles and legends.
+
+Summary cards with key metrics to quickly convey the most important numbers without needing to interpret raw data.
+
+Tooltips and hover-text to explain technical terms or data points in plain language.
+
+Guided navigation and help sections to assist users unfamiliar with the dataset or analysis.
+
+For Technical Users:
+
+Detailed interactive visualizations like scatter plots, confusion matrices, and feature importance charts that allow deeper exploration.
+
+Access to raw data tables with sorting and filtering options.
+
+Export functionality for further offline analysis.
+
+Inclusion of model metrics and diagnostic plots to support technical evaluation of the models.
+
+This layered approach ensures the dashboard is accessible and valuable to stakeholders with varying expertise levels, supporting both quick overview insights and in-depth technical analysis.
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+Challenges, Bugs, and Learning Reflections
+Unfixed Bugs and Framework Limitations
+During the development of this project, a few bugs and limitations were identified but remain unresolved due to inherent constraints in the technologies used rather than lack of effort:
+
+Interactive Plot Responsiveness: Some plots (especially those with large datasets) showed delayed responsiveness or lag when applying filters. This is a known limitation of the dashboard library’s rendering performance with complex interactive visuals. Optimizing or switching to a more performant framework could mitigate this, but was beyond the current project scope.
+
+Cross-Browser Compatibility Issues: Minor layout inconsistencies appeared on certain browsers (e.g., older versions of Internet Explorer). These issues stem from the CSS framework and dashboard library support, which prioritize modern browsers. Given the primary user base uses updated browsers, this was deprioritized.
+
+Export Functionality Restrictions: Exporting charts to PDF or image format had limited customization options, constrained by the library’s built-in capabilities. More advanced export features would require additional third-party tools or custom development.
+
+All unfixed issues were thoroughly documented and assessed; decisions to leave them unresolved were based on their minimal impact on the overall user experience and the scope constraints, rather than lack of effort or understanding.
+
+Knowledge Gaps and How They Were Addressed
+Throughout the project, I encountered gaps in my understanding of:
+
+Advanced data visualization techniques, particularly interactive dashboards with complex filtering.
+
+Machine learning model evaluation metrics beyond basic accuracy, such as interpreting R² and feature importance in random forests.
+
+Deployment considerations and performance optimization for web-based dashboards.
+
+To address these gaps, I:
+
+Consulted online courses and tutorials focused on dashboard frameworks and visualization best practices.
+
+Used AI tools like ChatGPT and Grock AI to get explanations and code examples tailored to these topics.
+
+Reviewed peer projects and instructor-provided materials via the LMS for practical insights and guidance.
+
+This combination of self-directed learning and external assistance helped bridge the gaps and strengthened my ability to develop and communicate data-driven solutions effectively.
+
+Feedback and Its Impact
+Feedback from peers and instructors was invaluable in refining the project:
+
+Peer Review: Peers pointed out areas where visualizations could be made more intuitive and suggested adding tooltips for clarity, which improved the dashboard’s usability.
+
+Instructor Guidance: Instructors emphasized the importance of clearly differentiating between exploratory and explanatory visuals, which led me to redesign some charts and add contextual descriptions.
+
+Code Review: Feedback on code structure and documentation improved maintainability and readability of the project.
+
+Incorporating this feedback enhanced both the technical quality and the accessibility of the project, ensuring it meets the needs of diverse audiences more effectively.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+Challenges Faced and Strategies to Overcome Them
+During the course of this project, several challenges arose:
+
+Handling Complex Data Transformations: Managing and cleaning the dataset to prepare it for modeling involved multiple steps, including dealing with missing values, categorical encoding, and feature engineering. To overcome this, I broke down the data preprocessing into smaller, manageable tasks and utilized libraries like Pandas and Scikit-learn’s preprocessing modules to streamline the process.
+
+Building Intuitive and Interactive Visualizations: Designing a dashboard that catered to both technical and non-technical users required careful selection of visualization types and interaction elements. I addressed this by researching best practices in data visualization, iterating through different plot types, and incorporating feedback from peers to improve clarity and usability.
+
+Understanding Machine Learning Model Evaluation: Initially, interpreting advanced metrics such as feature importance and regression evaluation scores was challenging. I leveraged AI assistants and educational resources to deepen my understanding, which enabled more insightful analysis and communication of model results.
+
+Performance Optimization: Ensuring the dashboard remained responsive with large datasets was difficult due to limitations in the visualization libraries. I mitigated this by limiting the data shown at once, implementing efficient filtering, and optimizing data queries.
+
+Skills and Tools to Learn Next
+Based on my experience with this project, I plan to expand my skillset in the following areas:
+
+Advanced Dashboard Frameworks: Learning tools like Dash by Plotly or Streamlit to build more scalable and performant interactive dashboards.
+
+Cloud Deployment: Gaining experience with deploying data applications to cloud platforms (e.g., AWS, Azure, or Heroku) to make dashboards accessible online with better performance.
+
+Deepening Machine Learning Knowledge: Exploring advanced machine learning techniques such as ensemble methods beyond Random Forests, hyperparameter tuning, and model interpretability tools like SHAP or LIME.
+
+Data Engineering Fundamentals: Understanding database optimization, ETL pipelines, and big data processing to handle larger, more complex datasets efficiently.
+
+These goals aim to build on the foundation laid by this project and enhance my ability to develop robust, user-friendly data solutions.
+
 
 ## Deployment
 The deployment process is carried out using Tableau.
